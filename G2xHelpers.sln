@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G2xHelpers", "G2xHelpers\G2xHelpers.csproj", "{2B35C02D-A1AE-4F13-B781-CEB660559354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteG2xHelpers", "TesteG2xHelpers\TesteG2xHelpers.csproj", "{E06C1CD4-8A49-42DB-A213-9D195BB2B258}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B35C02D-A1AE-4F13-B781-CEB660559354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B35C02D-A1AE-4F13-B781-CEB660559354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B35C02D-A1AE-4F13-B781-CEB660559354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B35C02D-A1AE-4F13-B781-CEB660559354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E06C1CD4-8A49-42DB-A213-9D195BB2B258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06C1CD4-8A49-42DB-A213-9D195BB2B258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06C1CD4-8A49-42DB-A213-9D195BB2B258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06C1CD4-8A49-42DB-A213-9D195BB2B258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31CCD5BC-469E-46CD-AAA9-D57C836052C2}
+	EndGlobalSection
+EndGlobal
