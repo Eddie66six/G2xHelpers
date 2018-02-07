@@ -1,4 +1,5 @@
-﻿using System;
+﻿using G2xHelpers;
+using System;
 
 namespace TesteG2xHelpers
 {
@@ -7,9 +8,9 @@ namespace TesteG2xHelpers
         static void Main(string[] args)
         {
 
-            Console.WriteLine(G2xHelpers.G2xString.IsEmail("guilherme@w12.com.br"));
-            Console.WriteLine(G2xHelpers.G2xString.IsNumber("12"));
-            Console.WriteLine(G2xHelpers.G2xString.LimitChar("123adf", 6, "..."));
+            Console.WriteLine("guilherme@w12.com.br".IsEmail());
+            Console.WriteLine("12.200,00".IsNumber());
+            Console.WriteLine("123adf".LimitChar(6, "..."));
             Console.ReadKey();
         }
     }
