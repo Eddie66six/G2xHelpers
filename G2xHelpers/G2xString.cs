@@ -6,8 +6,7 @@ namespace G2xHelpers
     {
         public static bool IsEmail(this string email)
         {
-            if (string.IsNullOrEmpty(email)) return false;
-            return Regex.IsMatch(email, "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$");
+            return !string.IsNullOrEmpty(email) && Regex.IsMatch(email, "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$");
         }
         public static bool IsNumber(this string number)
         {
@@ -17,8 +16,7 @@ namespace G2xHelpers
         }
         public static string LimitChar(this string value, int maxChar, string finalChar)
         {
-            if (string.IsNullOrEmpty(value)) return null;
-            return $"{value.Substring(0, (value.Length > maxChar ? maxChar : value.Length))}{finalChar}";
+            return string.IsNullOrEmpty(value) ? null : $"{value.Substring(0, (value.Length > maxChar ? maxChar : value.Length))}{finalChar}";
         }
     }
 }
