@@ -10,9 +10,7 @@ namespace G2xHelpers
         }
         public static bool IsNumber(this string number)
         {
-            if (string.IsNullOrEmpty(number)) return false;
-            var rgx = new Regex(@"^-?((\d+)|(\d+[\.|\,]?\d+)|(\d{1,3}\.\d{3}\,\d+))$");
-            return rgx.Match(number).Success;
+            return !string.IsNullOrEmpty(number) && new Regex(@"^-?((\d+)|(\d+[\.|\,]?\d+)|(\d{1,3}\.\d{3}\,\d+))$").Match(number).Success;
         }
         public static string LimitChar(this string value, int maxChar, string finalChar)
         {
