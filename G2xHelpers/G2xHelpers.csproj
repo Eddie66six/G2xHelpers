@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="G2xInteger.cs" />
     <Compile Include="G2xString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
