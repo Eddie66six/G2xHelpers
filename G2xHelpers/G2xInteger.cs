@@ -5,7 +5,7 @@
         #region IsEvenNumber
         private static bool _IsEvenNumber(int? value)
         {
-            return value == null ? false : value.Value % 2 == 0;
+            return value != null && value.Value % 2 == 0;
         }
         public static bool IsEvenNumber(this int value)
         {
