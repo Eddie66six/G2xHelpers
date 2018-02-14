@@ -15,8 +15,9 @@ namespace TesteG2xHelpers
             Console.WriteLine("Aássée^".RemoveAccents());
 
             Console.WriteLine("inteiros");
-            int? numeroTeste = 10;
+            int? numeroTeste = 2;
             Console.WriteLine(numeroTeste?.IsEvenNumber());
+            Console.WriteLine(numeroTeste?.IsPrime());
             Console.ReadKey();
         }
     }
